@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: clean_todos
+    description: "A clean, structured table of to-do items."
+    columns:
+      - name: id
+        description: "The unique identifier for each to-do item."
+        tests:
+          - unique
+          - not_null
+
+      - name: completed
+        description: "Whether the to-do item has been completed."
+        tests:
+          - not_null

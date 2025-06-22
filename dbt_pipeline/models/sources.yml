@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: todos_pipeline  # This is the name of your BigQuery dataset
+    description: "The dataset containing raw data loaded from our EL pipeline."
+    tables:
+      - name: raw_todos   # The name of the staging table created by Python
+        description: "Raw JSON data of todos, loaded from the API."
