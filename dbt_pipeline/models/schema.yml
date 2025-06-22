@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: clean_todos
+  - name: clean_todos # This is the name of the clean todos model
     description: "A clean, structured table of to-do items."
     columns:
       - name: id
@@ -12,5 +12,18 @@ models:
 
       - name: completed
         description: "Whether the to-do item has been completed."
+        tests:
+          - not_null
+  - name: clean_sales   # This is the name of the clean sales model
+    description: "Cleaned sales transaction data."
+    columns:
+      - name: order_id
+        description: "The unique identifier for each order."
+        tests:
+          - unique
+          - not_null
+      
+      - name: sale_date
+        description: "The date the sale occurred."
         tests:
           - not_null

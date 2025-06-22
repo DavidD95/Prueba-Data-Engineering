@@ -6,3 +6,5 @@ sources:
     tables:
       - name: raw_todos   # The name of the staging table created by Python
         description: "Raw JSON data of todos, loaded from the API."
+      - name: raw_sales   # The name of the sales staging table created by Python
+        description: "Raw CSV content of sales data, loaded from GCS."
