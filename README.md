@@ -82,7 +82,7 @@ This project is designed as a client-server orchestration system. To run it loca
 2.  **Terminal 2 (Start the Worker):**
     ```bash
     # Ensure environment variables are set if not done permanently
-    prefect worker start --pool "dynamic-workpool"
+    prefect worker start --pool "dynamic_workpool"
     ```
 
 You will need a third terminal to deploy the flow initially:
